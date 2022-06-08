@@ -233,7 +233,7 @@ class Preprocessor(object):
                         for ent in ent_list:
                             entity_value_to_slot[ent] = 'car'
         ambiguous_entities = set(ambiguous_entities)
-        ambiguous_entities.remove('cambridge')
+        #ambiguous_entities.remove('cambridge')
         ambiguous_entities = list(ambiguous_entities)
         for amb_ent in ambiguous_entities:   # departure or destination? arrive time or leave time?
             entity_value_to_slot.pop(amb_ent)
